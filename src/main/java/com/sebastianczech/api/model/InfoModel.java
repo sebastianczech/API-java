@@ -11,7 +11,7 @@ import lombok.ToString;
 @ToString
 public class InfoModel {
 
-    private Integer id;
+    private Long id;
     private String name;
 
 }
