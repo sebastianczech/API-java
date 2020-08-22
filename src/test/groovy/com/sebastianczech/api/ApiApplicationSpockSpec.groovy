@@ -7,8 +7,10 @@ import spock.lang.Specification
 class ApiApplicationSpockSpec extends Specification {
 
     @Shared
-    def client = new RESTClient("http://localhost:8080")
+    def client = new RESTClient("http://localhost:48080")
 //    def client = new RESTClient("$SERVER_URL:$SERVER_PORT")
+
+//    https://www.blazemeter.com/blog/testing-your-api-assertions-with-the-spock-framework/
 
     def 'should return 200 code when trying to show info'() {
         when: 'get /info'
